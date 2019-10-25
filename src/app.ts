@@ -12,7 +12,11 @@ createConnection().then(connection => {
     const app = express();
     app.use(bodyParser.json());
 
+
     // register routes
+    //
+    // users routes
+
 
     app.get("/users", async function(req: Request, res: Response) {
         const users = await userRepository.find();
@@ -41,6 +45,22 @@ createConnection().then(connection => {
         const results = await userRepository.delete(req.params.id);
         return res.send(results);
     });
+
+
+    // authentication routes
+
+    // login 
+    app.post("/api/login", async function(req: Request, res: Response){
+    	// TODO: login logic
+    	// issue JWT
+    	res.json({"message": "Success"});
+    });
+
+    // create JWT
+    app.post("/api/users", async function(req: Request, res: Response){
+    	res.json({"message": "Success"});
+    });
+
 
     // start express server
     app.listen(3000);
