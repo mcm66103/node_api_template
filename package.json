@@ -1,0 +1,28 @@
+{
+  "name": "node_project",
+  "version": "1.0.0",
+  "description": "a node api template with JWT authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcm66103/node_api_template.git"
+  },
+  "author": "Maverick Moore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcm66103/node_api_template/issues"
+  },
+  "homepage": "https://github.com/mcm66103/node_api_template#readme",
+  "dependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pg": "^7.12.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.20"
+  }
+}
